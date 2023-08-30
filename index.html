@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ai web</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.3/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header class="max-w-screen-xl mx-auto text-center space-y-5 mt-5">
+    <h3 class="text-4xl">AI Universe Hub</h3>
+    <button onclick="s1()" class="btn btn-error text-white">Sort By Date</button>
+  </header>
+  <main class="max-w-screen-xl mx-auto mt-5">
+    <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="main_card_container">
+
+    </div>
+    <div class="text-center mt-5 hidden" id="see_more">
+      <button onclick="loadMoreBtn()" class="btn btn-error text-white">See More</button>
+    </div>
+
+    <!-- modal -->
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn">open modal</button> -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <form method="dialog" class="modal-box">
+        <div id="main_container1">
+
+        </div>
+
+        </div>
+      </form>
+    </dialog>
+
+  </main>
+  <script src="./main.js"></script>
+</body>
+
+</html>
